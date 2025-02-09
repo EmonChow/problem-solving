@@ -57,3 +57,7 @@ def designerPdfViewer(h, word):
 
 # test cases
 # print(designerPdfViewer([1, 3, 1, 3, 1, 4, 1, 3, 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5], "gadj"))
+
+
+
+
