@@ -106,4 +106,40 @@ def topKFrequent(nums, k):
             if len(res) == k:
                 return res
             
-print(topKFrequent([1, 3, 3, 2, 2, 3], 2)) 
+# print(topKFrequent([1, 3, 3, 2, 2, 3], 2)) 
+
+
+def sum_of_two_numbers(nums, target):
+    for i in range(len(nums)):
+        for j in range(i + 1, len(nums)):
+            if nums[i] + nums[j] == target:
+                return [i, j]
+    return []
+
+# print(sum_of_two_numbers([2, 7, 11, 15], 9))
+
+
+
+
+def rotate_image(matrix):
+    n = len(matrix)
+    
+    for i in range(n // 2):
+      
+     
+        for j in range(i, n - i - 1):
+           
+            temp = matrix[i][j]
+          
+            matrix[i][j] = matrix[n - 1 - j][i]
+        
+            matrix[n - 1 - j][i] = matrix[n - 1 - i][n - 1 - j]
+          
+            matrix[n - 1 - i][n - 1 - j] = matrix[j][n - 1 - i]
+        
+            matrix[j][n - 1 - i] = temp
+          
+    return matrix
+
+
+print(rotate_image([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))
