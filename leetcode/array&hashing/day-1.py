@@ -103,4 +103,4 @@ def topKFrequent(nums, k):
             if len(res) == k:
                 return res
             
-print(topKFrequent([1, 3, 3, 2, 2, 3], 2))  # Output: [1, 2]
+print(topKFrequent([1, 3, 3, 2, 2, 3], 2)) 
