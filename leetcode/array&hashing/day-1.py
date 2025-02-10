@@ -123,9 +123,9 @@ def sum_of_two_numbers(nums, target):
 
 def rotate_image(matrix):
     n = len(matrix)
-    
+    print("range: ", range(n // 2))
     for i in range(n // 2):
-      
+        
      
         for j in range(i, n - i - 1):
            
