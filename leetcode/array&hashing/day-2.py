@@ -111,14 +111,19 @@ def merge(intervals):
 def reverseString(s):
      left = 0
      right = len(s) - 1
-     print("right: ", right)
-
+ 
      while left < right:
           s[left], s[right] = s[right], s[left]
+          print("left: ", left)
+          print("right: ", right)
           left += 1
+          print("left+1: ", left)
           right -= 1
+          print("right-1: ", right)
 
      return s
 
 
-print(reverseString(["h", "e", "l", "l", "o"]))  # Output: ["o", "l", "l", "e", "h"]
+# print(reverseString(["h", "e", "l", "l", "o"]))  # Output: ["o", "l", "l", "e", "h"]
+
+
