@@ -17,5 +17,5 @@ def getMoneySpent(keyboards, drives, b):
                     max_value = keyboard + drive
      return max_value
 
-# test cases
+
 print(getMoneySpent([1, 2, 3], [1, 2, 8], 11))
